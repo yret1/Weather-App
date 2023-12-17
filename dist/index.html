@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="weatherapp">
+        <h1 class="weatherapp__title">Todays Weather</h1>
+    </header>
+    <main class="mainwrapper">
+
+        <section class="weather__search">
+            <input type="text" placeholder="Enter City" id="search" required>
+        </section>
+
+        <section class="weather">
+            <section class="weather__topl">
+                <h2 id="city" class="weather__city"></h2>
+                <h3 id="country" class="weather__country"></h3>
+                <p id="time" class="weather__time"></p>
+            </section>
+            <section class="weather__topr">
+                <span id="temp" class="weather__temp"></span>
+            </section>
+            <section class="weather__botl">
+                <div class="weather__info--box">
+                    <span class="info--header">Humidity</span>
+                    <p id="humidity" class="weather__humidity"></p>
+                </div>
+                <div class="weather__info--box">
+                    <span class="info--header">Conditon</span>
+                    <p id="condition" class="weather__conditions"></p>
+                </div>
+            </section>
+            <section class="weather__botr">
+                <div class="weather__info--box">
+                    <span class="info--header">Feels Like</span>
+                    <p id="feels" class="weather__maxtemp"></p>
+                </div>
+                <div class="weather__info--box">
+                    <span class="info--header">Windspeed</span>
+                    <p id="windspeed" class="weather__mintemp"></p>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
