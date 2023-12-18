@@ -1,15 +1,5 @@
-# 🚀 Welcome to your new awesome project!
+A simple app to check the weather!
 
-This project has been created using **webpack-cli**, you can now run
+Using freeWeatherAPI
 
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+Part of The Odinproject!
