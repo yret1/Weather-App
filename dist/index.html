@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <script src="/src/concats.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,35 +16,36 @@
 
         <section class="weather__search">
             <input type="text" placeholder="Enter City" id="search" required>
+            <button class="weather__submit" type="submit" id="submit">search</button>
         </section>
 
-        <section class="weather">
+        <section class="weather" id="appWrapp">
             <section class="weather__topl">
-                <h2 id="city" class="weather__city"></h2>
-                <h3 id="country" class="weather__country"></h3>
-                <p id="time" class="weather__time"></p>
+                <h2 id="city" class="weather__city text--item"></h2>
+                <h3 id="country" class="weather__country text--item"></h3>
+                <p id="time" class="weather__time text--item"></p>
             </section>
             <section class="weather__topr">
-                <span id="temp" class="weather__temp"></span>
+                <span id="temp" class="weather__temp text--item"></span>
             </section>
             <section class="weather__botl">
                 <div class="weather__info--box">
-                    <span class="info--header">Humidity</span>
-                    <p id="humidity" class="weather__humidity"></p>
+                    <span class="info--header text--item">Humidity</span>
+                    <p id="humidity" class="weather__humidity text--item"></p>
                 </div>
                 <div class="weather__info--box">
-                    <span class="info--header">Conditon</span>
-                    <p id="condition" class="weather__conditions"></p>
+                    <span class="info--header text--item">Conditon</span>
+                    <p id="condition" class="weather__conditions text--item"></p>
                 </div>
             </section>
             <section class="weather__botr">
-                <div class="weather__info--box">
-                    <span class="info--header">Feels Like</span>
-                    <p id="feels" class="weather__maxtemp"></p>
+                <div class="weather__info--box ">
+                    <span class="info--header text--item">Feels Like</span>
+                    <p id="feels" class="weather__maxtemp text--item"></p>
                 </div>
                 <div class="weather__info--box">
-                    <span class="info--header">Windspeed</span>
-                    <p id="windspeed" class="weather__mintemp"></p>
+                    <span class="info--header text--item">Windspeed</span>
+                    <p id="windspeed" class="weather__mintemp text--item"></p>
                 </div>
             </section>
         </section>
