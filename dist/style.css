@@ -12,7 +12,7 @@
     text-align: center;
     padding: 5px;
 
-    background-color: black;
+    background-color: green;
     color: white;
 }
 
@@ -21,12 +21,21 @@
     width: 350px;
 }
 .weather__search input{
-    width: 100%;
+    width: 80%;
     height: 40px;
     border-radius: 10px;
     padding: 10px;
 }
+.weather__submit{
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
 
+    &:hover{
+        background-color: antiquewhite;
+        cursor: pointer;
+    }
+}
 .mainwrapper{
 
     display: flex;
@@ -40,7 +49,7 @@
 
 .weather {
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 350px;
     height: 400px;
     padding: 20px;
@@ -79,7 +88,7 @@
 .weather__botl{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: first baseline;
     padding: 20px;
     padding-bottom: 0px;
@@ -91,13 +100,19 @@
 .weather__botr{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: first baseline;
+    justify-content: flex-end;
+    align-items: flex-end;
     padding: 20px;
     padding-bottom: 0px;
     text-wrap: nowrap;
     width: 100%;
     grid-area: "botr";
+}
+.weather__info--boxr{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 
@@ -108,4 +123,34 @@
 .info--header{
     font-size: 15px;
     font-weight: bold;
+}
+
+@media (min-width: 500px){
+
+
+
+    .weather{
+        width: 600px;
+        height: 900px;
+    }
+    .weather__mintemp, .weather__maxtemp, .weather__humidity, .weather__conditions{
+        font-size: 25px;
+    }
+    
+    .weather__city{
+        font-size: 60px;
+    }
+    .weather__country{
+        font-size: 40px;
+    }
+    .weather__time{
+        font-size: 30px;
+    }
+    .weather__temp{
+        font-size: 180px;
+    }
+    .info--header{
+        font-size: 30px;
+    }
+
 }

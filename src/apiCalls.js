@@ -1,3 +1,6 @@
+import {day,night} from "./DayOrNight.js"
+
+
 let city = document.getElementById("city");
 let country = document.getElementById("country");
 let temp = document.getElementById("temp");
@@ -7,54 +10,6 @@ let condition = document.getElementById("condition")
 
 let feelsLike = document.getElementById("feels");
 let winds = document.getElementById("windspeed");
-
-
-
-
-
-
-
-
-
-
-const concat = () => {
-
-    let countryName = document.getElementById("country").innerHTML;
-    console.log(countryName)
-
-
-    if(countryName.length >= 3){
-
-
-
-
-        let splitName = countryName.split(" ");
-
-        let newArray = [];
-
-
-        splitName.forEach(name => {
-
-            newArray.push(name[0])
-
-            
-        });
-
-
-        console.log(newArray)
-
-
-
-
-
-
-
-
-
-
-
-    }
-}
 
 
 
@@ -82,13 +37,17 @@ function weatherCall () {
 
         currentTime.innerText = actuallTime
 
+        let DorN = actuallTime.split(":");
+        console.log(DorN)
+
+        if(DorN[0] <= 19 && DorN[0] >= 6){
+            day()
+        }else{
+            night()
+        }
+
 
     })
-
-    .then(() => {
-        concat()
-    })
-
 
 }
 
@@ -134,9 +93,18 @@ export function newWeatherCall () {
 
         currentTime.innerText = actuallTime
 
-    })
-    .then(() => {
-        concat()
+
+        let DorN = actuallTime.split(":");
+        console.log(DorN)
+
+        if(DorN[0] <= 19 && DorN[0] >= 6){
+            day()
+        }else{
+            night()
+        }
+
+        
+
     })
 }
 

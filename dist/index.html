@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <script src="/src/concats.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <header class="weatherapp">
-        <h1 class="weatherapp__title">Todays Weather</h1>
+    <header class="weatherapp" id="header">
+        <h1 class="weatherapp__title">The Weather</h1>
     </header>
     <main class="mainwrapper">
 
         <section class="weather__search">
             <input type="text" placeholder="Enter City" id="search" required>
-            <button class="weather__submit" type="submit" id="submit">search</button>
+            <button class="weather__submit" type="submit" id="submit">Search</button>
         </section>
 
         <section class="weather" id="appWrapp">
@@ -39,11 +38,11 @@
                 </div>
             </section>
             <section class="weather__botr">
-                <div class="weather__info--box ">
+                <div class="weather__info--boxr">
                     <span class="info--header text--item">Feels Like</span>
                     <p id="feels" class="weather__maxtemp text--item"></p>
                 </div>
-                <div class="weather__info--box">
+                <div class="weather__info--boxr">
                     <span class="info--header text--item">Windspeed</span>
                     <p id="windspeed" class="weather__mintemp text--item"></p>
                 </div>
